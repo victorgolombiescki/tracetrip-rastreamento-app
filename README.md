@@ -124,3 +124,4 @@ O estado da aplicação é persistido usando Zustand + AsyncStorage:
 - Lista de veículos
 - Status de onboarding
 # tracetrip-rastreamento-app
+# tracetrip-rastreamento-app
