@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "TraceTrip Rastreamento",
+    "slug": "trace-trip-rastreamento",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#254985"
+    },
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tracetrip.rastreamento",
+      "statusBarStyle": "light",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Este aplicativo precisa acessar sua localização para rastreamento veicular.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Este aplicativo precisa acessar sua localização para rastreamento veicular.",
+        "UIStatusBarStyle": "UIStatusBarStyleLightContent",
+        "UIViewControllerBasedStatusBarAppearance": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#254985"
+      },
+      "package": "com.tracetrip.rastreamento",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "O TraceTrip precisa da sua localização para rastreamento veicular.",
+          "locationWhenInUsePermission": "O TraceTrip precisa da sua localização para rastreamento veicular."
+        }
+      ]
+    ]
+  }
+}
